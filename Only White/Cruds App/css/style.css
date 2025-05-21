@@ -1,0 +1,202 @@
+/*Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(23, 162, 184, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #17a2b8;
+}
+/*End Scroll Bar*/
+
+/*Start Global Values*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f1f1f1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.button-hover:hover {
+  letter-spacing: 1px;
+}
+/*End Global Values*/
+
+/*Start Heder*/
+.header {
+  padding: 15px;
+  text-align: center;
+}
+
+.header h3 {
+  font-size: 22px;
+}
+
+.header p {
+  line-height: 2.5;
+  font-size: 18px;
+}
+/*End Heder*/
+
+/*Start Product-Info*/
+.product-details,
+.product-search,
+.table {
+  width: 80%;
+  margin: auto;
+}
+
+.product-details input,
+.product-search input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.product-details .product-price {
+  display: flex;
+  column-gap: 5px;
+}
+
+.product-details .product-price .total {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #dddddd;
+  margin-bottom: 5px;
+}
+
+.product-details .product-price .total::before {
+  content: "Total:";
+  margin-right: 5px;
+}
+
+.product-details .create,
+.product-search .search-buttons button,
+.delete-all button {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*End Product-Info*/
+
+/*Start Product-Search*/
+.product-search {
+  margin: 8px auto;
+}
+
+.product-search .search-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-search .search-buttons button {
+  width: 49.5%;
+  display: inline-block;
+}
+/*End Product-Search*/
+
+/*Start Table*/
+table,
+tr,
+th,
+td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.table table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table table tbody {
+  text-align: center;
+}
+
+.table table tbody tr td button {
+  padding: 10px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  cursor: pointer;
+}
+/*End Table*/
+
+/*Buttons*/
+.delete-all {
+  width: 80%;
+  margin: auto;
+}
+
+.delete-all button {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.del-btn {
+  background-color: red !important;
+}

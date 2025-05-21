@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h3>Cruds App <button class="dark">Dark</button></h3>
+      <p>Create Read Update Delete Search Your Own Products</p>
+    </div>
+
+    <div class="product-details">
+      <input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Product Title :"
+      />
+
+      <!--Start Price-->
+      <div class="product-price">
+        <input
+          type="number"
+          name="price"
+          id="price"
+          placeholder="Price :"
+          onkeyup="totalPrice()"
+        />
+        <input
+          type="number"
+          name="taxes"
+          id="taxes"
+          placeholder="Taxes :"
+          onkeyup="totalPrice()"
+        />
+        <input
+          type="number"
+          name="others"
+          id="others"
+          placeholder="Others :"
+          onkeyup="totalPrice()"
+        />
+        <input
+          type="number"
+          name="discount"
+          id="discount"
+          placeholder="Discount :"
+          onkeyup="totalPrice()"
+        />
+        <div class="total"></div>
+      </div>
+      <!--End Price-->
+
+      <input type="number" name="count" id="count" placeholder="Count :" />
+      <input type="text" name="category" id="category" placeholder="Category" />
+      <button class="create button-hover">Create</button>
+    </div>
+
+    <div class="product-search">
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Search :"
+        onkeyup="searchValue(this)"
+      />
+      <div class="search-buttons">
+        <button
+          class="search-title button-hover"
+          id="search-title"
+          onclick="searchData(this)"
+        >
+          Search By Title
+        </button>
+        <button
+          class="search-category button-hover"
+          id="search-category"
+          onclick="searchData(this)"
+        >
+          Search By Category
+        </button>
+      </div>
+    </div>
+
+    <div class="delete-all"></div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Others</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+  .product-details .product-price {
+    flex-direction: column;
+  }
+
+  .product-details .product-price .total {
+    padding: 15px;
+  }
+
+  .product-search .search-buttons {
+    flex-direction: column;
+  }
+
+  .product-search .search-buttons button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .table {
+    overflow: auto;
+  }
+
+  .table::-webkit-scrollbar {
+    display: none;
+  }
+}
