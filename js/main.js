@@ -134,6 +134,10 @@ function deleteItem(i) {
   arrProducts.splice(i, 1);
   addToLocalStorage(arrProducts);
   addToPage(arrProducts);
+
+  if (arrProducts.length === 0) {
+    delAll.innerHTML = "";
+  }
 }
 
 // [6] - Update Item
