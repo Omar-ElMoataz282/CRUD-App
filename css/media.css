@@ -1,6 +1,11 @@
 @media (max-width: 767px) {
   .product-details .product-price {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-details .product-price input {
+    width: 49%;
   }
 
   .product-details .product-price .total {
